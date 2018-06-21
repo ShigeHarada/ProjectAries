@@ -1,0 +1,5 @@
+〇Docker起動設定
+sudo docker run -e 'ACCEPT_EULA=Y' -e 'MSSQL_SA_PASSWORD=P@ssw0rD' -p 1401:1433 -v /home/shige/mssql:/var/opt/mssql --name DockerDB -d microsoft/mssql-server-linux:2017-GA
+
+〇コンテナ内起動
+docker exec -it LocalMSSQL "bash"
